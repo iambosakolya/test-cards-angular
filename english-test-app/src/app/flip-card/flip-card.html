@@ -1,0 +1,14 @@
+<div class="flip-card" [class.flipped]="flipped()" (click)="toggle()">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="card-label">Question</div>
+      <p>{{ question() }}</p>
+      <div class="hint">Click to reveal answer</div>
+    </div>
+    <div class="flip-card-back">
+      <div class="card-label">Answer</div>
+      <div class="answer-text" [innerHTML]="answer()"></div>
+      <div class="hint">Click to return to question</div>
+    </div>
+  </div>
+</div>

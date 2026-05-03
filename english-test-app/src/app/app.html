@@ -1,0 +1,7 @@
+<div class="page">
+  <div class="cards-grid">
+    @for (q of questions; track q.id) {
+      <app-flip-card [question]="q.question" [answer]="q.answer" />
+    }
+  </div>
+</div>

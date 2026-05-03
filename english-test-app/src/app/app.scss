@@ -1,0 +1,36 @@
+.page {
+  min-height: 100vh;
+  padding: 40px 24px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 48px;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 8px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #718096;
+    margin: 0;
+  }
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 28px;
+}
+
+@media (max-width: 480px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
